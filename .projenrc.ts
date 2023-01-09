@@ -8,5 +8,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   packageManager: javascript.NodePackageManager.NPM,
   projenrcTs: true,
   repositoryUrl: 'https://github.com/rf/aws-cdk-repro-23596.git',
+  depsUpgrade: false,
+  release: false,
 });
 project.synth();
